@@ -7,6 +7,7 @@
 .main-container{
     background: linear-gradient(135deg, #eeb4e6, #87a8f0);
     padding-bottom: 30px;
+    width: 100%;
 }
 .navbar{
     display: flex;
