@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+.main-container{
+    background: linear-gradient(135deg, #eeb4e6, #87a8f0);
+    padding-bottom: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgb(27, 27, 27);
+    align-items: center;
+    width: 100%;
+}
+.navbar h3{
+    color: #f1d21d;
+    font-family: cursive;
+}
+h3 span{
+    color: rgb(0, 252, 239);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 43px;
+    left: 0;
+}
+ul.show{
+    top: 40px;
+    visibility: visible;
+    flex-direction: column;
+    position: absolute;
+    padding: 18px;
+    background-color:  rgb(27, 27, 27);
+    align-items: end;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+}
+.navbar .dropdown{
+    display: none;
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+}
+.navbar .dropdown div{
+    height: 5px;
+    width: 40px;
+    background: linear-gradient(90deg, #eeb4e6 10%, #fff 60%, #87a8f0);
+    margin: 5px 8px;
+}
+@media only screen and (max-width: 600px){
+    .navbar .dropdown{
+        display: block;
+    }
+    ul{
+        visibility: hidden;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        left: 0;
+    }
+}
+
+/*----<<<<<<<<<<<< About Client >>>>>>>>>>.-----------*/
+.clientIntro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+    background: #f0f3f3;
+    gap: 30px;
+
+}
+
+.clientIntro div img{
+    width: 200px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border: 4px solid #9c4a91;
+}
+.aboutClient{
+    font-size: 21px;
+    font-family: cursive;
+    max-width: 400px;
+    animation: fadeIn 4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.aboutClient p a{
+    color: rgb(22, 72, 211);
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .clientIntro div img{
+        width: 120px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .aboutClient{
+        font-size: 15px;
+        font-family: cursive;
+        max-width: 400px;
+    }
+
+}
+@media only screen and (max-width: 300px){
+    .clientIntro{
+        display: block;
+        padding: 30px;
+        align-items: center;
+    }
+    .aboutClient{
+        margin-top: 10px;
+    }
+}
+
+/**************<< WEARS >>*************************/
+.wearsCollection{
+    margin-top: 20px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.malewears h4{
+    color: #fff;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 10px 30%;
+    text-decoration: overline;
+}
+.malewears div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3px;
+}
+.maleCloths{
+    display: grid;
+    grid-gap: 2px;
+}
+
+.maleCloths .male1{
+    grid-row: span 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+.maleCloths .male3 img{
+    height: 100%;
+    width: 180px;
+}
+.maleCloths .male3{
+    grid-row: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+.malewears div img{
+    width: 175px;
+    height: 150px;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+@media (min-width: 605) and (max-width: 1130px){
+    .malewears .kidsWear{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .wearsCollection{
+        display: block;
+        align-items: center;
+        margin: 0 5%;
+    }
+    .maleCloths .male3 img{
+        height: 100%;
+        width: 110px;
+    }
+    
+    .malewears div img{
+        width: 120px;
+        height: 90px;
+        border: 3px solid grey;
+        border-radius: 10px;
+    }
+    .malewears h4{
+        color: #fff;
+        font-size: 13px;
+        margin-top: 30px;
+    }
+}
