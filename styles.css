@@ -8,6 +8,8 @@
     background: linear-gradient(135deg, #eeb4e6, #87a8f0);
     padding-bottom: 30px;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .navbar{
     display: flex;
