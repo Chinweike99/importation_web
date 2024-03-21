@@ -6,7 +6,6 @@
 }
 body{
     margin: 0;
-    overflow: hidden;
 }
 .main-container{
     background: linear-gradient(135deg, #eeb4e6, #87a8f0);
@@ -204,10 +203,21 @@ ul li a{
 }
 
 @media (min-width: 605) and (max-width: 1130px){
-    .malewears .kidsWear{
-        display: block;
+    #secondSection .wearsCollection{
+        background: #f1d21d;
+    }
+    .maleCloths .male3 img{
+        height: 100%;
+        width: 110px;
+    }   
+    .malewears div img{
+        width: 10px;
+        height: 90px;
+        border: 3px solid grey;
+        border-radius: 10px;
     }
 }
+
 
 @media only screen and (max-width: 600px){
     .section2{
