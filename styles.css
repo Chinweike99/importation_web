@@ -474,8 +474,8 @@ section .horizontal #slideImages3{
 }
 .parternersSection .partner{
     width: 190px;
-    /*animation: fadeIn 5s ease-in-out forwards; 
-    opacity: 0;*/
+    animation: fadeIn 5s ease-in-out forwards; 
+    opacity: 0;
     color: #fff;
     background: linear-gradient(150deg, #5e6166, #645462);
     padding: 20px 10px;
