@@ -155,9 +155,15 @@ ul li a{
     align-items: center;
     justify-content: center;
 }
+#wearsh3{
+    margin: 40px 0 0 8px;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+}
 .wearsCollection{
     padding: 10px 50px;
-    margin: 0 30px;
+    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +194,7 @@ ul li a{
 }
 .maleCloths .male3 img{
     height: 100%;
-    width: 180px;
+    width: 160px;
 }
 .maleCloths .male3{
     grid-row: span 2;
@@ -196,30 +202,19 @@ ul li a{
     grid-row-end: span 2;
 }
 .malewears div img{
-    width: 175px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border: 3px solid grey;
     border-radius: 10px;
 }
-
-@media (min-width: 605) and (max-width: 1130px){
-    #secondSection .wearsCollection{
-        background: #f1d21d;
-    }
-    .maleCloths .male3 img{
-        height: 100%;
-        width: 110px;
-    }   
-    .malewears div img{
-        width: 10px;
-        height: 90px;
-        border: 3px solid grey;
-        border-radius: 10px;
-    }
-}
-
+/* #maleShirt{
+    margin-left: 50px;
+} */
 
 @media only screen and (max-width: 600px){
+    #wearsh3{
+        font-size: 25px;
+    }
     .section2{
         padding-right: -30%;
     }
@@ -227,6 +222,7 @@ ul li a{
         display: block;
         align-items: center;
         padding-right: -10px;
+        margin-top: -20px;
     }
     .maleCloths .male3 img{
         height: 100%;
