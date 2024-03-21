@@ -295,7 +295,7 @@ section .horizontal #slideImages span img{
     border: 2px solid grey;
     border-radius: 5px;
     filter: grayscale(100);
-    transition: transform 0.7s;
+    transition: transform 1.8s;
 }
 section .horizontal #slideImage span img{
     width: 160px;
@@ -491,9 +491,9 @@ section .horizontal #slideImages3{
 }
 
 .section3 span{
-    font-size: 30px;
-    color: #fff;
-    font-family: cursive;
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
 }
 @media only screen and (max-width: 600px){
     .parternersSection {
@@ -512,4 +512,39 @@ section .horizontal #slideImages3{
         font-size: 13px;
     }
     
+}
+
+/************************************ COMPANIES LOGO*************************************/
+.companyDiv{
+    background: #eff1f1;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+.companies div img{
+    height: 60px;
+}
+.companies div{
+    width: 900px;
+    margin: 50px;
+}
+.companies{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -30px;
+}
+.companyDiv span{
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px){
+    .companies div img{
+        height:45px;
+    }
+    .companyDiv span{
+        font-size: 20px;
+    }
 }
