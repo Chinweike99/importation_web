@@ -457,3 +457,45 @@ section .horizontal #slideImages3{
     flex: none;
     gap: 10px;
 }
+
+/*********************************Partners Section**********************************/
+.section3{
+    text-align: center;
+}
+
+.parternersSection {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin: 20px 50px;
+    gap: 14px;
+    margin-top: 5px;
+}
+.parternersSection .partner{
+    width: 190px;
+    animation: fadeIn 5s ease-in-out forwards; 
+    opacity: 0;
+    color: #fff;
+    background: linear-gradient(150deg, #5e6166, #645462);
+    padding: 20px 10px;
+    border: 3px solid rgb(223, 211, 224);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.parternersSection .partner img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgb(233, 229, 229);
+}
+
+.aboutClient{
+    font-size: 21px;
+    font-family: cursive;
+    max-width: 400px;
+}
+.section3 span{
+    font-size: 30px;
+    color: #fff;
+    font-family: cursive;
+}
