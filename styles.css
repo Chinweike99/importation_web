@@ -474,15 +474,26 @@ section .horizontal #slideImages3{
 }
 .parternersSection .partner{
     width: 190px;
-    animation: fadeIn 5s ease-in-out forwards; 
-    opacity: 0;
+    /* animation: fadeIn 5s ease-in-out forwards; 
+    opacity: 0; */
     color: #fff;
     background: linear-gradient(150deg, #5e6166, #645462);
     padding: 20px 10px;
     border: 3px solid rgb(223, 211, 224);
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    aspect-ratio: 1 / 1;
+    animation: 4s linear 3s forwards sun-rise;
 }
+@keyframes sun-rise {
+    from {
+      transform: translateY(50%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
 .parternersSection .partner img{
     width: 120px;
     height: 120px;
@@ -526,7 +537,16 @@ section .horizontal #slideImages3{
 .companies div{
     width: 900px;
     margin: 50px;
+    animation: 8s linear 0s infinite bounce;
 }
+@keyframes bounce {
+    from {
+      transform: translateX(-50vw);
+    }
+    to {
+      transform: translateX(50vw);
+    }
+  }
 .companies{
     display: flex;
     align-content: center;
