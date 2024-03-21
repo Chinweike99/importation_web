@@ -461,6 +461,7 @@ section .horizontal #slideImages3{
 /*********************************Partners Section**********************************/
 .section3{
     text-align: center;
+    margin-top: -20px;
 }
 
 .parternersSection {
@@ -473,8 +474,8 @@ section .horizontal #slideImages3{
 }
 .parternersSection .partner{
     width: 190px;
-    animation: fadeIn 5s ease-in-out forwards; 
-    opacity: 0;
+    /*animation: fadeIn 5s ease-in-out forwards; 
+    opacity: 0;*/
     color: #fff;
     background: linear-gradient(150deg, #5e6166, #645462);
     padding: 20px 10px;
@@ -489,13 +490,26 @@ section .horizontal #slideImages3{
     border: 2px solid rgb(233, 229, 229);
 }
 
-.aboutClient{
-    font-size: 21px;
-    font-family: cursive;
-    max-width: 400px;
-}
 .section3 span{
     font-size: 30px;
     color: #fff;
     font-family: cursive;
+}
+@media only screen and (max-width: 600px){
+    .parternersSection {
+        margin: 20px 10px;
+        gap: 3px;
+    }
+    .parternersSection .partner img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid rgb(233, 229, 229);
+    }
+    .parternersSection .partner{
+        width: 150px;
+        padding: 20px 0;
+        font-size: 13px;
+    }
+    
 }
