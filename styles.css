@@ -4,12 +4,17 @@
     font-family: "Poppins";
     box-sizing: border-box;
 }
+body{
+    background-color: red;
+    margin: 0;
+    overflow: hidden;
+}
 .main-container{
     background: linear-gradient(135deg, #eeb4e6, #87a8f0);
     padding-bottom: 30px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    right: 0;
+    overflow: hidden;
 }
 .navbar{
     display: flex;
@@ -85,7 +90,6 @@ ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     background: #f0f3f3;
     gap: 30px;
     padding-top: 100px;
@@ -198,6 +202,9 @@ ul li a{
 }
 
 @media (min-width: 605) and (max-width: 1130px){
+    .main-container{
+        background-color: yellow;
+    }
     .malewears .kidsWear{
         display: block;
     }
