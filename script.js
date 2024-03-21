@@ -51,3 +51,45 @@ nextBtn.addEventListener("click", () => {
     slideImages.style.scrollBehavior = "smooth";
     slideImages.scrollLeft += 300;
 });
+
+/********************JS For Horizontal Slide2**********************/
+const slideImages2 = document.getElementById("slideImages2");
+const backBtn2 = document.getElementById("backBtn2");
+const nextBtn2 = document.getElementById("nextBtn2");
+
+slideImages2.addEventListener("wheel", (mv) =>{
+    mv.preventDefault();
+    slideImages2.scrollLeft += mv.deltaY;
+    slideImages2.style.scrollBehavior = "auto";
+});
+
+backBtn2.addEventListener("click", () => {
+    slideImages2.style.scrollBehavior = "smooth";
+    slideImages2.scrollLeft -= 300;
+});
+
+nextBtn2.addEventListener("click", () => {
+    slideImages2.style.scrollBehavior = "smooth";
+    slideImages2.scrollLeft += 300;
+});
+
+/********************JS For Horizontal Slide3**********************/
+const slideImages3 = document.getElementById("slideImages3");
+const backBtn3 = document.getElementById("backBtn3");
+const nextBtn3 = document.getElementById("nextBtn3");
+
+slideImages3.addEventListener("wheel", (mv) =>{
+    mv.preventDefault();
+    slideImages3.scrollLeft += mv.deltaY;
+    slideImages3.style.scrollBehavior = "auto";
+});
+
+backBtn3.addEventListener("click", () => {
+    slideImages3.style.scrollBehavior = "smooth";
+    slideImages3.scrollLeft -= 300;
+});
+
+nextBtn3.addEventListener("click", () => {
+    slideImages3.style.scrollBehavior = "smooth";
+    slideImages3.scrollLeft += 300;
+});
