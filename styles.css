@@ -615,7 +615,11 @@ footer{
 }
 
 @media only screen and (max-width: 600px){
-
+    .subBtn{
+        display: flex;
+        margin: 0 80px;
+        margin-bottom: 15px;
+    }
     .subBtn div{
         padding: 10px 8px;
         display: flex;
