@@ -10,7 +10,6 @@ body{
 }
 .main-container{
     background: linear-gradient(135deg, #eeb4e6, #87a8f0);
-    padding-bottom: 30px;
     align-items: center;
     right: 0;
     overflow: hidden;
@@ -162,7 +161,6 @@ h3 span{
     margin: 80px 0 0 8px;
     text-align: center;
     font-size: 35px;
-    font-family: cursive;
 }
 .wearsCollection{
     padding: 10px 70px;
@@ -175,7 +173,6 @@ h3 span{
 .malewears h4{
     color: #fff;
     font-size: 25px;
-    font-family: cursive;
     margin: 10px 30%;
     text-decoration: overline;
     text-align: center;
@@ -723,4 +720,5 @@ footer{
     gap: 10%;
     margin-left: 19%;
     margin-top: -19px;
+    padding-bottom: 40px;
  }
