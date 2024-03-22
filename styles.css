@@ -34,13 +34,13 @@ h3 span{
     color: rgb(0, 252, 239);
 }
 
-ul{
+#navList{
     list-style: none;
     display: flex;
     gap: 43px;
     right: 0;
 }
-ul.show{
+#navList.show{
     top: 36px;
     visibility: visible;
     flex-direction: column;
@@ -52,7 +52,7 @@ ul.show{
     height: auto;
     transition: all 0.5s ease-in-out;
 }
-ul li a{
+#navList li a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -74,10 +74,10 @@ ul li a{
     .navbar .dropdown{
         display: block;
     }
-    ul{
+    #navList{
         visibility: hidden;
     }
-    ul{
+    #navList{
         list-style: none;
         display: flex;
         gap: 20px;
@@ -567,4 +567,58 @@ section .horizontal #slideImages3{
     .companyDiv span{
         font-size: 20px;
     }
+}
+
+/*********************** FOOTER SECTION*****************************/
+.footerInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131111;
+}
+.footerInfo .companyFooter{
+    width: 950px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin: 30px 50px;
+    padding: 10px 50px;
+}
+.footerInfo .companyFooter .details ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+.companyFooter .details p{
+    font-size: 20px;
+    color: #0852f3;
+    animation: 8s linear 0s backwards bounce;
+}
+.details ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.details ul li .facebook{
+    color: rgb(4, 4, 224);
+    font-size: 23px;
+    padding-left: 12px;
+}
+.details ul li .instagram{
+    color: rgb(192, 6, 6);
+    font-size: 23px;
+    padding-left: 12px;
+}
+.details ul li .twitter{
+    color: rgb(27, 27, 117);
+    font-size: 23px;
+    padding-left: 12px;
+}
+.details ul li .whatsapp{
+    color: rgb(15, 77, 15);
+    font-size: 25px;
+    padding-left: 12px;
+}
+.details ul li .youtube{
+    color: rgb(230, 34, 66);
+    font-size: 23px;
+    padding-left: 12px;
 }
