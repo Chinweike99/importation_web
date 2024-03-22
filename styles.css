@@ -530,6 +530,7 @@ section .horizontal #slideImages3{
     background: #eff1f1;
     margin-top: 60px;
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 .companies div img{
     height: 60px;
@@ -570,11 +571,72 @@ section .horizontal #slideImages3{
 }
 
 /*********************** FOOTER SECTION*****************************/
+footer{
+    background: #eff1f1;
+}
+.subBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(145deg, #5255fa, #a9dfb0 65%);
+    margin: 0 150px;
+    margin-bottom: 30px;
+}
+.subBtn div{
+    padding: 20px 20px;
+    display: flex;
+    width: 100%;
+}
+
+.subBtn div button{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.subBtn div button:hover{
+    background: #196e24;
+    font-size: 21px;
+}
+.subBtn div input{
+    border: none;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .subBtn div{
+        padding: 10px 8px;
+        display: flex;
+        width: 100%;
+    }
+    .subBtn div button{
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+    .subBtn div input{
+        font-size: 13px;
+    }
+}
+
+
 .footerInfo{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #131111;
+    padding-bottom: 25px;
 }
 .footerInfo .companyFooter{
     width: 950px;
@@ -655,6 +717,6 @@ section .horizontal #slideImages3{
     display: flex;
     font-size: 10px;
     gap: 10%;
-    margin-left: 21%;
-    margin-top: -15px;
+    margin-left: 19%;
+    margin-top: -19px;
  }
