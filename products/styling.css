@@ -43,7 +43,7 @@ section .femaleheader{
 
 section .femaleWears{
     text-align: center;
-    margin: 20px 200px;
+    margin: 20px 100px;
     animation: 4s linear 3s forwards sun-rise;
 }
 
