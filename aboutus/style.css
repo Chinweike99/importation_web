@@ -63,6 +63,12 @@ body{
     padding: 4px;
     animation: 5s linear 0s forwards bounce;
 }
+.teamDiv .person1 img:hover{
+  width: 131px;
+  height: 131px;
+  padding: 0;
+  border: 0;
+}
 @keyframes bounce {
     from {
       transform: translateX(-50vw);
@@ -108,6 +114,13 @@ body{
     padding: 4px;
     animation: 5s linear 0s forwards bounce2;
 }
+.teamDiv .person2 img:hover{
+  width: 131px;
+  height: 131px;
+  padding: 0;
+  border: 0;
+}
+
 @keyframes bounce2 {
   from {
     transform: translateX(50vw);
