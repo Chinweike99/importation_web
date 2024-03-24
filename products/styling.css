@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***************************Female Section ******************************/
+
+body{
+    background: #555;
+    padding: 5px 0;
+}
+.welcomeNote{
+    text-align: center;
+    margin: 20px 150px;
+    font-size: 18px;
+    color: #ebe2e9;
+    background: #555;
+}
+.welcomeNote .emphasis{
+    font-size: 19px;
+    color: #6eeff8;
+    text-decoration: underline;
+}
+
+section{
+    background: linear-gradient(90deg, rgb(44, 187, 212), #c47a7a, #6d136d);
+    overflow-y: hidden;
+}
+section .femaleWears{
+    text-align: center;
+    margin: 20px 200px;
+}
+section .femaleWears img{
+    width: 100px;
+    height: 130px;
+    border-radius: 15px;
+    border: 3px solid grey;
+}
+
+/*** button ***/
+section .button1 {
+    display: flex;
+    justify-content: center;
+    margin: 40px 100px;
+}
+.button1 button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #107747, #3a465c, #24884e);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button1 button:hover{
+    background: #fff;
+    color: #333;
+    transition: all 0.7 ease;
+}
+.button1 .firstBtn{
+    margin-right: 10px;
+}
