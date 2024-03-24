@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: linear-gradient(90deg, #5574d8, #e4e2e2 50%, #bb5eaf);
+}
+.teamDiv {
+    margin: 50px;
+}
+
+/***************Person 1*****************************/
+.teamDiv span{
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: overline;
+  animation: topIn 5s linear 7s forwards;
+}
+@keyframes topIn {
+  from {
+    /* pushes the sun down past the viewport */
+    transform: translateY(0);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: translateY(50vh);
+  }
+}
+.teamDiv .person1{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: justify;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.teamDiv .person1 p{
+    width: 50%;
+    animation: 5s linear 0s forwards rightin;
+}
+@keyframes rightin {
+    from {
+      transform: translateX(50vw);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+.teamDiv{
+    align-items: center;
+    text-align: center;
+}
+.teamDiv .person1 img{
+    width: 130px;
+    height: 130px;
+    border: 3px solid #e2e0e0;
+    border-radius: 50%;
+    padding: 4px;
+    animation: 5s linear 0s forwards bounce;
+}
+@keyframes bounce {
+    from {
+      transform: translateX(-50vw);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  /**************************Person 2***********************/
+  .teamDiv .person2{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: justify;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.teamDiv .person2 p{
+    width: 50%;
+    animation: 5s linear 0s forwards rightin2;
+}
+@keyframes rightin2 {
+  from {
+    transform: translateX(-50vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.teamDiv{
+    align-items: center;
+    text-align: center;
+}
+.teamDiv .person2 img{
+    width: 130px;
+    height: 130px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    padding: 4px;
+    animation: 5s linear 0s forwards bounce2;
+}
+@keyframes bounce2 {
+  from {
+    transform: translateX(50vw);
+  }
+  to {
+    transform: translateX(-0.1vw);
+  }
+}
+
+/*********************Socials **************************************/
+.handles p{
+  font-size: 25px;
+  margin-top: 30px;
+  font-weight: 600;
+  text-decoration: overline;
+  animation: 5s linear 0s forwards bounce2
+}
+.teamDiv .socialMedia{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin: 0px 170px;
+  padding: 0 5px;
+  background: transparent;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.teamDiv .socialMedia ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  gap: 10px;
+  animation: 5s linear 0s forwards rightin2;
+}
+
+.teamDiv .socialMedia ul li{
+ list-style: none;
+ font-size: 50px;
+}
+li .facebook{
+  color: rgb(4, 4, 224);
+}
+li .instagram{
+  color: rgb(192, 6, 6);
+}
+ul li .twitter{
+  color: rgb(27, 27, 117);
+}
+ul li .whatsapp{
+  color: rgb(15, 77, 15);
+}
+ul li .youtube{
+  color: rgb(230, 34, 66);
+}
+
+/********************************FOOTER*****************************/
+
+footer{
+  background: #eff1f1;
+}
+.subBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(145deg, #5255fa, #a9dfb0 65%);
+  margin: 0 150px;
+  margin-bottom: 30px;
+}
+.subBtn div{
+  padding: 20px 20px;
+  display: flex;
+  width: 100%;
+}
+
+.subBtn div button{
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.subBtn div button:hover{
+  background: #196e24;
+  font-size: 21px;
+}
+.subBtn div input{
+  border: none;
+  outline: none;
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+  .subBtn{
+      display: flex;
+      margin: 0 80px;
+      margin-bottom: 15px;
+  }
+  .subBtn div{
+      padding: 10px 8px;
+      display: flex;
+      width: 100%;
+  }
+  .subBtn div button{
+      padding: 5px 5px;
+      font-size: 13px;
+  }
+  .subBtn div input{
+      font-size: 13px;
+  }
+}
+
+
+.footerInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #131111;
+  padding-bottom: 25px;
+}
+.footerInfo .companyFooter{
+  width: 950px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  margin: 0 50px;
+  margin-top: 20px;
+  padding: 0 50px;
+}
+.footerInfo .companyFooter .details ul li{
+  list-style: none;
+  margin: 5px 0;
+  font-size: 13px;
+}
+.companyFooter .details p{
+  font-size: 18px;
+  color: #0852f3;
+  animation: 8s linear 0s backwards bounce;
+}
+.details ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.details ul li .facebook{
+  color: rgb(4, 4, 224);
+  font-size: 21px;
+  padding-left: 12px;
+}
+.details ul li .instagram{
+  color: rgb(192, 6, 6);
+  font-size: 21px;
+  padding-left: 12px;
+}
+.details ul li .twitter{
+  color: rgb(27, 27, 117);
+  font-size: 21px;
+  padding-left: 12px;
+}
+.details ul li .whatsapp{
+  color: rgb(15, 77, 15);
+  font-size: 21px;
+  padding-left: 12px;
+}
+.details ul li .youtube{
+  color: rgb(230, 34, 66);
+  font-size: 21px;
+  padding-left: 12px;
+}
+
+@media only screen and (max-width: 600px){
+  .footerInfo .companyFooter .details ul li{
+      font-size: 9px;
+  }
+  .companyFooter .details p{
+      font-size: 15px;;
+  }
+  .details ul li .facebook{
+      font-size: 18px;
+  }
+  .details ul li .instagram{
+      font-size: 18px;
+  }
+  .details ul li .twitter{
+      font-size: 18px;
+  }
+  .details ul li .whatsapp{
+      font-size: 18px;
+  }
+  .details ul li .youtube{
+      font-size: 18px;
+  }
+}
+
+/*********************** Bottom Div**********************/
+.bottomDiv{
+  color: #fff;
+  display: flex;
+  font-size: 10px;
+  gap: 10%;
+  margin-left: 19%;
+  margin-top: -19px;
+  padding-bottom: 40px;
+}
