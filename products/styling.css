@@ -56,7 +56,7 @@ section .femaleWears{
     }
   }
 section .femaleWears img{
-    width: 100px;
+    width: 300px;
     height: 130px;
     border-radius: 15px;
     border: 3px solid grey;
@@ -91,6 +91,46 @@ section .button1 {
 .button1 .firstBtn{
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 600px){
+    section .femaleWears img{
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        border: 3px solid grey;
+    }
+    section .femaleWears img:hover{
+        width: 100px;
+        height: 133px;
+        border-radius: 15px;
+        border: 3px solid #fff;
+    }
+    
+    /*** button ***/
+    section .button1 {
+        display: flex;
+        justify-content: center;
+        margin: 40px 100px;
+    }
+    .button1 button{
+        padding: 10px 20px;
+        font-size: 20px;
+        background: linear-gradient(135deg, #107747, #3a465c, #24884e);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .button1 button:hover{
+        background: #fff;
+        color: #333;
+        transition: all 0.7 ease;
+    }
+    .button1 .firstBtn{
+        margin-right: 10px;
+    }
+}
+
 
 /********************* Section 2 ***************/
 
