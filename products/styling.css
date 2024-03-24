@@ -23,19 +23,49 @@ body{
     text-decoration: underline;
 }
 
+/************Section 1, Female***********************/
 section{
     background: linear-gradient(90deg, rgb(44, 187, 212), #c47a7a, #6d136d);
     overflow-y: hidden;
 }
+
+section .femaleheader{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top:  30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #f0e5e5;
+    text-decoration: overline;
+}
+
+
 section .femaleWears{
     text-align: center;
     margin: 20px 200px;
+    animation: 4s linear 3s forwards sun-rise;
 }
+
+@keyframes sun-rise {
+    from {
+      transform: translateY(-30%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 section .femaleWears img{
     width: 100px;
     height: 130px;
     border-radius: 15px;
     border: 3px solid grey;
+}
+section .femaleWears img:hover{
+    width: 100px;
+    height: 133px;
+    border-radius: 15px;
+    border: 3px solid #fff;
 }
 
 /*** button ***/
@@ -60,4 +90,50 @@ section .button1 {
 }
 .button1 .firstBtn{
     margin-right: 10px;
+}
+
+/********************* Section 2 ***************/
+
+.maleSection {
+    background: linear-gradient(90deg, #6d136d, rgb(44, 187, 212), #c47a7a);
+    overflow-y: hidden;
+}
+
+section .femaleheader{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top:  30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #f0e5e5;
+    text-decoration: overline;
+}
+
+
+section .femaleWears{
+    text-align: center;
+    margin: 20px 200px;
+    animation: 4s linear 3s forwards sun-rise;
+}
+
+@keyframes sun-rise {
+    from {
+      transform: translateY(-30%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+section .femaleWears img{
+    width: 100px;
+    height: 130px;
+    border-radius: 15px;
+    border: 3px solid grey;
+}
+section .femaleWears img:hover{
+    width: 100px;
+    height: 133px;
+    border-radius: 15px;
+    border: 3px solid #fff;
 }
