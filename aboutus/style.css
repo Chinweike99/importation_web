@@ -8,6 +8,7 @@ body{
 }
 .teamDiv {
     margin: 50px;
+    overflow: hidden;
 }
 
 /***************Person 1*****************************/
