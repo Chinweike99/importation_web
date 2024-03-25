@@ -8,7 +8,79 @@ body{
 }
 .teamDiv {
     margin: 50px;
+    margin-top: 80px;
     overflow: hidden;
+}
+/****************************** NAV BAR ****************************/
+.navbar{
+  display: flex;
+  padding: 11px;
+  background: rgb(27, 27, 27);
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.navbar h3{
+  color: #f1d21d;
+  font-family: cursive;
+}
+h3 span{
+  color: rgb(0, 252, 239);
+}
+
+#navList{
+  list-style: none;
+  display: flex;
+  gap: 43px;
+  right: 0;
+}
+#navList.show{
+  top: 36px;
+  visibility: visible;
+  flex-direction: column;
+  position: absolute;
+  padding: 18px;
+  background-color:  rgb(27, 27, 27);
+  align-items: end;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+#navList li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-align: right;
+}
+.navbar .dropdown{
+  display: none;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+}
+.navbar .dropdown div{
+  height: 5px;
+  width: 40px;
+  background: linear-gradient(90deg, #eeb4e6 10%, #fff 60%, #87a8f0);
+  margin: 5px 8px;
+}
+@media only screen and (max-width: 600px){
+  .navbar .dropdown{
+      display: block;
+  }
+  #navList{
+      visibility: hidden;
+  }
+  #navList{
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      left: 0;
+  }
 }
 
 /***************Person 1*****************************/
