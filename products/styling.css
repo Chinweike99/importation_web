@@ -4,15 +4,85 @@
     box-sizing: border-box;
 }
 
-/***************************Female Section ******************************/
-
 body{
     background: #555;
-    padding: 5px 0;
 }
+/***************************Female Section ******************************/
+.navbar{
+    display: flex;
+    padding: 11px;
+    background: rgb(27, 27, 27);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.navbar h3{
+    color: #f1d21d;
+    font-family: cursive;
+}
+h3 span{
+    color: rgb(0, 252, 239);
+}
+
+#navList{
+    list-style: none;
+    display: flex;
+    gap: 43px;
+    right: 0;
+}
+#navList.show{
+    top: 36px;
+    visibility: visible;
+    flex-direction: column;
+    position: absolute;
+    padding: 18px;
+    background-color:  rgb(27, 27, 27);
+    align-items: end;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+#navList li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+}
+.navbar .dropdown{
+    display: none;
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+}
+.navbar .dropdown div{
+    height: 5px;
+    width: 40px;
+    background: linear-gradient(90deg, #eeb4e6 10%, #fff 60%, #87a8f0);
+    margin: 5px 8px;
+}
+@media only screen and (max-width: 600px){
+    .navbar .dropdown{
+        display: block;
+    }
+    #navList{
+        visibility: hidden;
+    }
+    #navList{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        left: 0;
+    }
+}
+
 .welcomeNote{
     text-align: center;
     margin: 20px 150px;
+    margin-top: 70px;
     font-size: 18px;
     color: #ebe2e9;
     background: #555;
@@ -55,8 +125,8 @@ section .femaleWears{
       transform: translateY(0);
     }
   }
-section .femaleWears img{
-    width: 300px;
+.wears1 .femaleWears img{
+    width: 100px;
     height: 130px;
     border-radius: 15px;
     border: 3px solid grey;
@@ -93,19 +163,22 @@ section .button1 {
 }
 
 @media only screen and (max-width: 600px){
-    section .femaleWears img{
-        width: 60px;
-        height: 60px;
-        border-radius: 15px;
-        border: 3px solid grey;
+    .maleSection .femaleWears img{
+        width: 70px;
+        height: 100px;
     }
-    section .femaleWears img:hover{
-        width: 100px;
-        height: 133px;
-        border-radius: 15px;
-        border: 3px solid #fff;
+    .maleSection .femaleWears {
+        margin: 20px 40px;
     }
-    
+
+    .wears1 .femaleWears{
+        margin: 20px 40px;
+    }
+
+    .wears1 .femaleWears img{
+        width: 70px;
+        height: 100px;
+    } 
     /*** button ***/
     section .button1 {
         display: flex;
@@ -113,7 +186,7 @@ section .button1 {
         margin: 40px 100px;
     }
     .button1 button{
-        padding: 10px 20px;
+        padding: 5px 13px;
         font-size: 20px;
         background: linear-gradient(135deg, #107747, #3a465c, #24884e);
         color: #fff;
@@ -177,3 +250,160 @@ section .femaleWears img:hover{
     border-radius: 15px;
     border: 3px solid #fff;
 }
+
+/************** FOOTER ******************************/
+/*********************** FOOTER SECTION*****************************/
+footer{
+    background: #eff1f1;
+}
+.subBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(145deg, #5255fa, #a9dfb0 65%);
+    margin: 0 150px;
+    margin-bottom: 30px;
+}
+.subBtn div{
+    padding: 20px 20px;
+    display: flex;
+    width: 100%;
+}
+
+.subBtn div button{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.subBtn div button:hover{
+    background: #196e24;
+    font-size: 21px;
+}
+.subBtn div input{
+    border: none;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .subBtn{
+        display: flex;
+        margin: 0 80px;
+        margin-bottom: 15px;
+    }
+    .subBtn div{
+        padding: 10px 8px;
+        display: flex;
+        width: 100%;
+    }
+    .subBtn div button{
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+    .subBtn div input{
+        font-size: 13px;
+    }
+}
+
+
+.footerInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131111;
+    padding-bottom: 25px;
+}
+.footerInfo .companyFooter{
+    width: 950px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin: 0 50px;
+    margin-top: 20px;
+    padding: 0 50px;
+}
+.footerInfo .companyFooter .details ul li{
+    list-style: none;
+    margin: 5px 0;
+    font-size: 13px;
+}
+.companyFooter .details p{
+    font-size: 18px;
+    color: #0852f3;
+    animation: 8s linear 0s backwards bounce;
+}
+.details ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.details ul li .facebook{
+    color: rgb(4, 4, 224);
+    font-size: 21px;
+    padding-left: 12px;
+}
+.details ul li .instagram{
+    color: rgb(192, 6, 6);
+    font-size: 21px;
+    padding-left: 12px;
+}
+.details ul li .twitter{
+    color: rgb(27, 27, 117);
+    font-size: 21px;
+    padding-left: 12px;
+}
+.details ul li .whatsapp{
+    color: rgb(15, 77, 15);
+    font-size: 21px;
+    padding-left: 12px;
+}
+.details ul li .youtube{
+    color: rgb(230, 34, 66);
+    font-size: 21px;
+    padding-left: 12px;
+}
+
+ @media only screen and (max-width: 600px){
+    .footerInfo .companyFooter .details ul li{
+        font-size: 9px;
+    }
+    .companyFooter .details p{
+        font-size: 15px;;
+    }
+    .details ul li .facebook{
+        font-size: 18px;
+    }
+    .details ul li .instagram{
+        font-size: 18px;
+    }
+    .details ul li .twitter{
+        font-size: 18px;
+    }
+    .details ul li .whatsapp{
+        font-size: 18px;
+    }
+    .details ul li .youtube{
+        font-size: 18px;
+    }
+ }
+
+ /*********************** Bottom Div**********************/
+ .bottomDiv{
+    color: #fff;
+    display: flex;
+    font-size: 10px;
+    gap: 10%;
+    margin-left: 19%;
+    margin-top: -19px;
+    padding-bottom: 40px;
+ }
